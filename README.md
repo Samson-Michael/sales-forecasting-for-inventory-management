@@ -18,6 +18,25 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
   
 - Data Type Conversion: Necessary data type conversions were performed.
 
+# Exploratory Data Analysis (EDA)
+
+### Univariate Analysis:
+
+- Descriptive Statistics: Summary statistics for numerical variables like sales, price, and transactions were calculated to understand their central tendencies and variability.
+
+- Data Distributions: Histograms and box plots were created to visualize the distributions of key variables, identifying potential outliers or skewness.
+
+- Time Series Plots: Time series plots were generated for sales to identify trends, seasonality, and any anomalies.
+[Chart 1]: Time Series Plot of Total Sales Over Time (Include a vertical line to mark the date of the earthquake)
+
+### Bivariate Analysis:
+
+Scatter Plots: Scatter plots were created to explore relationships between sales and variables like onpromotion, price, and transactions.
+[Chart 2]: Scatter Plot of Sales vs. On Promotion
+Correlation Analysis: Correlation coefficients were calculated to quantify the strength of linear relationships between variables.
+[Chart 3]: Correlation Heatmap between key variables (e.g., sales, onpromotion, price)
+Grouped Analysis: Sales were analyzed by different groups (e.g., city, state, store_type, cluster) to identify variations in sales performance across different regions and store types.
+
 
 
 
