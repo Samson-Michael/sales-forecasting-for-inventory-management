@@ -27,7 +27,8 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
 - Data Distributions: Histograms and box plots were created to visualize the distributions of key variables, identifying potential outliers or skewness.
 
 - Time Series Plots: Time series plots were generated for sales to identify trends, seasonality, and any anomalies.
-[Chart 1]: Time Series Plot of Total Sales Over Time (Include a vertical line to mark the date of the earthquake)
+  ![newplot (17)](https://github.com/user-attachments/assets/395e7428-769d-45e7-9fa8-fdd34b0c181b)
+Time Series Plot of Total Sales Over Time, the vertical line marks the date of the earthquake
 
 ### Bivariate Analysis
 
