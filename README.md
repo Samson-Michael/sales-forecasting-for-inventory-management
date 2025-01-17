@@ -1,1 +1,1 @@
-# sales-forecasting-for-inventory-management
+# Sales Forecasting For Inventory Management
