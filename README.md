@@ -86,14 +86,38 @@ New features were created from existing ones to capture potential insights:
 
 - Model Performance: The final XGBoost model achieved an RMSE of 0.0155 on the validation set, indicating an excellent fit to the data with minimal error compared to other models evaluated.
 ![newplot (17)](https://github.com/user-attachments/assets/efac61b3-4cf6-4d86-8603-a4f2bb47712d)
+After carefully assessing the performance of our models using key evaluation metrics, it is evident that the XGBoost model stands out as the most effective choice for our dataset. The RMSLE (Root Mean Squared Logarithmic Error) serves as a crucial indicator, and the XGBoost model achieved the lowest RMSLE of 0.0054 among all models evaluated. This indicates that the XGBoost model provides the most accurate and precise predictions when compared to ARIMA, SARIMA, and ETS models.
 
 - Feature Importance: Feature importance analysis was conducted to identify the most influential features in the model's predictions.
-[Chart 5]: Bar chart of Feature Importance
+![image](https://github.com/user-attachments/assets/a51471df-866f-4397-bc83-ad8bc5036a46)
+Bar chart of Feature Importance
 
 
-# Prediction
+# Prediction(Forecast)
 
-The pre-trained model was used to make predictions on the unseen test data.
+The pre-trained model was utilized to generate forecasts for unseen test data. The predictions include estimated sales for various product families on specific dates, considering features like promotions, day of the week, and lagged sales metrics.
+
+
+For example:
+- **AUTOMOTIVE** on 2017-08-16 had a forecast of **0.000112**.
+- **BEVERAGES** on 2017-08-16 had a forecast of **0.019104**, reflecting higher expected sales compared to other categories.
+- The model incorporates features like `onpromotion`, `lag_1`, and `rolling_mean` to enhance forecast accuracy.
+
+
+# Conclusion
+
+- This project successfully developed a time series forecasting model for predicting store sales using a combination of data exploration, feature engineering, and machine learning techniques.
+
+- The XGBoost model demonstrated promising performance on the validation set, indicating its potential for accurate sales predictions.
+
+- Further improvements could be explored, such as incorporating more sophisticated time series models (e.g., Prophet), refining feature engineering, and exploring ensemble methods.
+
+
+# Limitations
+
+- The analysis may be limited by the availability and completeness of the data.
+
+- External factors not included in the dataset (e.g., economic conditions, competitor actions) could also influence sales and may not be fully captured by the model.
 
 
 
