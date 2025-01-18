@@ -18,6 +18,7 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
   
 - Data Type Conversion: Necessary data type conversions were performed.
 
+
 # Exploratory Data Analysis (EDA)
 
 ### Univariate Analysis
@@ -27,10 +28,10 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
 - Data Distributions: Histograms and box plots were created to visualize the distributions of key variables, identifying potential outliers or skewness.
 
 - Time Series Plots: Time series plots were generated for sales to identify trends, seasonality, and any anomalies.
-  
-  ![newplot (17)](https://github.com/user-attachments/assets/395e7428-769d-45e7-9fa8-fdd34b0c181b)
 
-  Time Series Plot of Total Sales Over Time, the vertical line marks the date of the earthquake
+![newplot (17)](https://github.com/user-attachments/assets/395e7428-769d-45e7-9fa8-fdd34b0c181b)
+
+Time Series Plot of Total Sales Over Time, the vertical line marks the date of the earthquake
 
 ### Bivariate Analysis
 
@@ -38,7 +39,8 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
 
 ![image](https://github.com/user-attachments/assets/be80470c-74a8-4d35-a8d6-023867b85b91)
 
-Scatter Plot of Sales vs. On Promotion
+Scatter Plot of Sales vs Promotion
+
 
 - Correlation Analysis: Correlation coefficients were calculated to quantify the strength of linear relationships between variables.
 
@@ -55,6 +57,7 @@ The Pearson correlation coefficient between the number of products under promoti
 Bar charts for Top 5 Sales by City, Cluster, State, and Store Type
 
 Insight: The sales analysis reveals key insights across various groupings. Quito and Guayaquil are the top-performing cities, while Cluster 14 and Pichincha lead in total sales by cluster and state, respectively. Holiday stores generate the highest revenue among store types, highlighting areas for focused strategic decision-making to enhance profitability.
+
 
 # Data Preprocessing
 
