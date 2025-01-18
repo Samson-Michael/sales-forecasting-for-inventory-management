@@ -49,8 +49,52 @@ The Pearson correlation coefficient between the number of products under promoti
 
 - Grouped Analysis: Sales were analyzed by different groups to identify variations in sales performance across different regions and store types.
 
--  ![image](https://github.com/user-attachments/assets/7973a8cc-fd99-4440-a2ca-11fe4f06d2f6)
--  Bar charts for Top 5 Sales by City, Cluster, State, and Store Type
+![image](https://github.com/user-attachments/assets/7973a8cc-fd99-4440-a2ca-11fe4f06d2f6)
+Bar charts for Top 5 Sales by City, Cluster, State, and Store Type
+
+Insight: The sales analysis reveals key insights across various groupings. Quito and Guayaquil are the top-performing cities, while Cluster 14 and Pichincha lead in total sales by cluster and state, respectively. Holiday stores generate the highest revenue among store types, highlighting areas for focused strategic decision-making to enhance profitability.
+
+# Data Preprocessing
+
+### Feature Engineering
+
+New features were created from existing ones to capture potential insights:
+- day_of_week, quarter, is_weekend, is_holiday from the date column.
+
+- Lag features for price and sales (e.g., oil_price_lag1, sales_lag7).
+
+- Rolling averages for sales (e.g., rolling_mean_7, rolling_mean_30).
+
+- Cyclical features (sine and cosine transformations) for month and day_of_week to capture seasonality.
+
+- Data Splitting:
+   - The data was split into training and validation sets to evaluate model performance.
+
+# Model Building
+
+- Model Selection:
+   - XGBoost was chosen as the machine learning model for its ability to handle complex relationships and capture non-linear patterns in time series data.
+
+- Model Training and Tuning:
+   - The XGBoost model was trained on the training data.
+   - Hyperparameter tuning was performed using RandomizedSearchCV to optimize model performance.
+
+- Model Evaluation:
+   - The trained model was evaluated on the validation set using metrics like Root Mean Squared Error (RMSE).
+
+# Results
+
+- Model Performance: The final XGBoost model achieved an RMSE of 0.0155 on the validation set, indicating an excellent fit to the data with minimal error compared to other models evaluated.
+![newplot (17)](https://github.com/user-attachments/assets/efac61b3-4cf6-4d86-8603-a4f2bb47712d)
+
+- Feature Importance: Feature importance analysis was conducted to identify the most influential features in the model's predictions.
+[Chart 5]: Bar chart of Feature Importance
+
+
+# Prediction
+
+The pre-trained model was used to make predictions on the unseen test data.
+
 
 
 
