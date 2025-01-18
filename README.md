@@ -29,6 +29,7 @@ The initial phase involved loading the data from the provided ZIP file using Pyt
 - Time Series Plots: Time series plots were generated for sales to identify trends, seasonality, and any anomalies.
   
   ![newplot (17)](https://github.com/user-attachments/assets/395e7428-769d-45e7-9fa8-fdd34b0c181b)
+
   Time Series Plot of Total Sales Over Time, the vertical line marks the date of the earthquake
 
 ### Bivariate Analysis
@@ -50,6 +51,7 @@ The Pearson correlation coefficient between the number of products under promoti
 - Grouped Analysis: Sales were analyzed by different groups to identify variations in sales performance across different regions and store types.
 
 ![image](https://github.com/user-attachments/assets/7973a8cc-fd99-4440-a2ca-11fe4f06d2f6)
+
 Bar charts for Top 5 Sales by City, Cluster, State, and Store Type
 
 Insight: The sales analysis reveals key insights across various groupings. Quito and Guayaquil are the top-performing cities, while Cluster 14 and Pichincha lead in total sales by cluster and state, respectively. Holiday stores generate the highest revenue among store types, highlighting areas for focused strategic decision-making to enhance profitability.
@@ -85,11 +87,15 @@ New features were created from existing ones to capture potential insights:
 # Results
 
 - Model Performance: The final XGBoost model achieved an RMSE of 0.0155 on the validation set, indicating an excellent fit to the data with minimal error compared to other models evaluated.
+
 ![newplot (17)](https://github.com/user-attachments/assets/efac61b3-4cf6-4d86-8603-a4f2bb47712d)
+
 After carefully assessing the performance of our models using key evaluation metrics, it is evident that the XGBoost model stands out as the most effective choice for our dataset. The RMSLE (Root Mean Squared Logarithmic Error) serves as a crucial indicator, and the XGBoost model achieved the lowest RMSLE of 0.0054 among all models evaluated. This indicates that the XGBoost model provides the most accurate and precise predictions when compared to ARIMA, SARIMA, and ETS models.
 
 - Feature Importance: Feature importance analysis was conducted to identify the most influential features in the model's predictions.
+  
 ![image](https://github.com/user-attachments/assets/a51471df-866f-4397-bc83-ad8bc5036a46)
+
 Bar chart of Feature Importance
 
 
