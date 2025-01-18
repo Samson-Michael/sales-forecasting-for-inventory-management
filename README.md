@@ -47,6 +47,11 @@ Correlation Heatmap between sales and onpromotion
 
 The Pearson correlation coefficient between the number of products under promotion and supermarket sales is 0.4180, with a p-value of 0.0000, indicating a statistically significant positive relationship. This suggests that as the number of promoted products increases, sales tend to rise. Supermarkets can leverage this insight by optimizing their promotional strategies to boost sales and revenue effectively.
 
+- Grouped Analysis: Sales were analyzed by different groups to identify variations in sales performance across different regions and store types.
+
+-  ![image](https://github.com/user-attachments/assets/7973a8cc-fd99-4440-a2ca-11fe4f06d2f6)
+-  Bar charts for Top 5 Sales by City, Cluster, State, and Store Type
+
 
 
 
